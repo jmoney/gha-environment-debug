@@ -1,4 +1,4 @@
-name: Update copyright year(s) in license file
+name: Dump the action environment as well as the Docker environment
 
 on:
   workflow_dispatch:
