@@ -7,9 +7,9 @@ jobs:
     Dump-Environment:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - name: Dump environment
               run: |
                 env
             - name: Dump Docker environment
-              uses: ./local/dump-docker-env
+              uses: ./local
