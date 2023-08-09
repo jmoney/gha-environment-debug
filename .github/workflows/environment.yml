@@ -1,0 +1,15 @@
+name: Update copyright year(s) in license file
+
+on:
+  workflow_dispatch:
+
+jobs:
+    update-license-year:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Dump environment
+              run: |
+                env
+            - name: Dump Docker environment
+              uses: ./local/dump-docker-env

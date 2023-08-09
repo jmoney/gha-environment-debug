@@ -1,0 +1,5 @@
+name: 'dump-docker-env'
+description: 'Simple local action for dumping the environment of a docker based actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
